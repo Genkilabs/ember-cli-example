@@ -1,8 +1,16 @@
 # Ember-cli-example
 
-This README outlines the details of collaborating on this Ember application.
+The goal of this project is to provide a working example of combining:
+* ember-cli
+* ember-data
+* ember-cli-cordova
+* ember-sync
+* ember-indexeddb-adapter
+* ember-list-view
 
-A short introduction of this app could easily go here.
+Some day...
+* ember-data -> epf
+* make a tutorial or blog
 
 ## Prerequisites
 
@@ -10,6 +18,34 @@ You will need the following things properly installed on your computer.
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM) and [Bower](http://bower.io/)
+
+You will also need to provide a working backend with a route
+* http://localhost:3000/agents
+
+This need to provide a JSON data set of the format
+```
+{
+	"agents": [
+		{
+			"id": 1,
+			"first_name": "John",
+			"last_name": "Johnson"
+		},
+		{
+			"id": 2,
+			"first_name": "Mike",
+			"last_name": "Smith"
+		}
+	]
+}
+```
+
+Build for Cordova following the instructions at
+* [https://github.com/poetic/ember-cli-cordova](https://github.com/poetic/ember-cli-cordova)
+
+
+----------------
+
 
 ## Installation
 

@@ -14,6 +14,7 @@
   "evil": true,
   "forin": false,
   "immed": false,
+  "jquery": true,
   "laxbreak": false,
   "newcap": true,
   "noarg": true,
@@ -29,5 +30,5 @@
   "white": false,
   "eqnull": true,
   "esnext": true,
-  "unused": true
+  "unused": false
 }

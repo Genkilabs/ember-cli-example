@@ -1,0 +1,14 @@
+@import 'normalize.scss';
+
+html, body {
+	margin: 20px;
+}
+
+.ember-list-view {
+	border: 1px solid #999;
+	overflow: auto;
+	position: relative;
+}
+.ember-list-item-view {
+	position: absolute;
+}
