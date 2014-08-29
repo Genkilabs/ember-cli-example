@@ -5,6 +5,9 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'hash',
+
+    serverHost: 'http://0.0.0.0:3000',
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -33,11 +36,12 @@ module.exports = function(environment) {
   }
 
   if (environment === 'test') {
-
+    ENV.serverHost = 'http://0.0.0.0:3000' //make this your test backend
   }
 
   if (environment === 'production') {
-
+    //Set this to your local IP so that you can find your back end when you build for a Cordova mobile device.
+    ENV.serverHost = 'http://192.168.1.109:3000'
   }
 
   return ENV;

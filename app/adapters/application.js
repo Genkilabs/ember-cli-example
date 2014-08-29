@@ -1,8 +1,14 @@
 import DS from 'ember-data';
 
+//uncomment to use default rest adapter
+// export default DS.RESTAdapter.extend({
+// 	host: EmberCliExampleENV.serverHost
+// });
+
+//uncomment to use IndexedDB
 export default DS.IndexedDBAdapter.extend({
 	databaseName: 'example_db',
-	version: 1,
+	version: 2,
 	migrations: function() {
 		//use the default id provided by backend
 		this.addModel('agent');
@@ -10,3 +16,8 @@ export default DS.IndexedDBAdapter.extend({
 		this.addModel('ember-sync-queue-model', {keyPath: 'id', autoIncrement: true});
 	}
 });
+
+//uncomment to use LocalStorage
+// export default DS.LSAdapter.extend({
+//     namespace: 'ember-example'
+// });

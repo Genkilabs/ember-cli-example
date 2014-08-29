@@ -10,6 +10,7 @@
     "ember-cli-test-loader": "rwjblue/ember-cli-test-loader#0.0.4",
     "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.2",
     "ember-list-view": "~0.0.4",
-    "ember-indexeddb-adapter": "git@github.com:kurko/ember-indexeddb-adapter.git#~0.6.0"
+    "ember-indexeddb-adapter": "git@github.com:kurko/ember-indexeddb-adapter.git#~0.6.0",
+    "ember-localstorage-adapter": "git@github.com:kurko/ember-localstorage-adapter.git#~0.3.2"
   }
 }

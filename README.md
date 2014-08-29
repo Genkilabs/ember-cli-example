@@ -6,11 +6,16 @@ The goal of this project is to provide a working example of combining:
 * ember-cli-cordova
 * ember-sync
 * ember-indexeddb-adapter
+* ember-localstorage-adapter
 * ember-list-view
 
 Some day...
 * ember-data -> epf
 * make a tutorial or blog
+
+## To test adapters...
+
+Uncomment different sections of `app/adapters/application.js` and `app/serializers/application.js` to switch between REST, IndexedDB and Local Storage.
 
 ## Prerequisites
 
@@ -42,7 +47,7 @@ This need to provide a JSON data set of the format
 
 Build for Cordova following the instructions at
 * [https://github.com/poetic/ember-cli-cordova](https://github.com/poetic/ember-cli-cordova)
-
+* Set your backend host with ENV.serverHost in the config/environment.js file
 
 ----------------
 

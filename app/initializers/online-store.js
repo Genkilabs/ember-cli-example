@@ -4,9 +4,9 @@ import DS from 'ember-data';
 var CustomOnlineSerializer = DS.ActiveModelSerializer.extend();
 
 var CustomOnlineAdapter = DS.ActiveModelAdapter.extend({
-	host: 'http://localhost:3000', //make this your backend
+	host: EmberCliExampleENV.serverHost, //make this your backend in config/environment.js
 	serializer: CustomOnlineSerializer.create(),
-// 	namespace: '/api/v1' // your server namespace if you have one
+ 	// namespace: '/api/v1' // your server namespace if you have one
 });
 
 // var OnlineStore = Ep.Session.extend({
