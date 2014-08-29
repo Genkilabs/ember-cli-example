@@ -8,7 +8,7 @@ import DS from 'ember-data';
 //uncomment to use IndexedDB
 export default DS.IndexedDBAdapter.extend({
 	databaseName: 'example_db',
-	version: 2,
+	version: 1,
 	migrations: function() {
 		//use the default id provided by backend
 		this.addModel('agent');
