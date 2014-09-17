@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @quality.name %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @quality.person %>
+</p>
+
+<%= link_to 'Edit', edit_quality_path(@quality) %> |
+<%= link_to 'Back', qualities_path %>
