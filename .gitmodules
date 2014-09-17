@@ -1,0 +1,3 @@
+[submodule "ember/vendor/ember-sync"]
+	path = ember/vendor/ember-sync
+	url = git@github.com:cheneveld/ember-sync.git

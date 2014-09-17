@@ -17,6 +17,8 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('vendor/ember-sync/dist/ember-sync.js', { 'ember-sync': [ 'default' ] });
+
 app.import('bower_components/ember-indexeddb-adapter/dist/ember_indexeddb_adapter.js');
 
 app.import('bower_components/ember-localstorage-adapter/localstorage_adapter.js');
