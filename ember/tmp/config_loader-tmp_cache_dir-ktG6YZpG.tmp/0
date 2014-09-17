@@ -1,0 +1,1 @@
+export default {"environment":"development","baseURL":"/","locationType":"hash","serverHost":"http://0.0.0.0:3000","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true},"cordova":{"rebuildOnChange":false,"rebuildAsync":false,"emulate":false}};
