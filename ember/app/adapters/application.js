@@ -11,8 +11,6 @@ export default DS.IndexedDBAdapter.extend({
 	version: 2,
 	migrations: function() {
 		//use the default id provided by backend
-		this.addModel('agent');
-
         this.addModel('person');
         this.addModel('quality');
 		//This is required if you use IndexedDB becuase it is not auto-generated.
