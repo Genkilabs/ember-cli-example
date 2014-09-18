@@ -1,9 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    title: "People",
     model: function() {
-        console.log("running people.index.model()");
         // Several request types provided for reference
 
         //ember SYNC

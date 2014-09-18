@@ -1,29 +1,39 @@
-<p>
-	<label>Name:</label>
-	{{view Ember.TextArea valueBinding="name"}}		
-</p>
-<p>
-	<label>Email:</label>
-	{{view Ember.TextArea valueBinding="email"}}
-</p>
-<p>
-	<label>Zip:</label>
-	{{view Ember.TextArea valueBinding="zipCode"}}
-</p>
-<p>
-	<button {{action 'save' model}}>
-	{{#if isLoaded}}
-		{{#if isSaving}}
-			Saving...
-		{{else}}
-			{{#if isDirty}}
-				Save me!
+<div style="width:50%;float:left;">
+	<p>
+		<label>Name:</label>
+		{{view Ember.TextArea valueBinding="name"}}		
+	</p>
+	<p>
+		<label>Email:</label>
+		{{view Ember.TextArea valueBinding="email"}}
+	</p>
+	<p>
+		<label>Zip:</label>
+		{{view Ember.TextArea valueBinding="zipCode"}}
+	</p>
+	<p>
+		<button {{action 'save' model}}>
+		{{#if isLoaded}}
+			{{#if isSaving}}
+				Saving...
 			{{else}}
-				Make some changes!
+				{{#if isDirty}}
+					Save me!
+				{{else}}
+					Make some changes!
+				{{/if}}
 			{{/if}}
+		{{else}}
+			Loading...
 		{{/if}}
-	{{else}}
-		Loading...
-	{{/if}}
-	</button>
-</p>
+		</button>
+	</p>
+</div>
+
+<div style="width:50%;float:left;text-align:right;">
+	<h4>Qualities</h4>
+	{{#each qualities}}
+		<p>{{name}}</p>
+	{{/each}} 
+
+</div>
