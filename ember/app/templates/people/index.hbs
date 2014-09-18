@@ -1,0 +1,36 @@
+<h2>People</h2>
+
+<p>Total found: {{length}}</p>
+{{outlet}}
+<table class="grid">
+	<tbody>
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Zip Code</th>
+			<th>Birth Date</th>
+			<th># of Qualities</th>
+		</tr>
+
+		{{#each}}
+			<tr {{action "loadPerson" this}}>
+				<td>{{id}}</td>
+				<td>{{name}}</td>
+				<td>{{email}}</td>
+				<td>{{zipCode}}</td>
+				<td>{{dateOfBirth}}</td>
+				<td>{{quality_count}}</td>
+			</tr>
+
+		{{/each}}
+		
+		{{#if loadingMore}}
+			<tr>
+				<td colspan="11" class="centered">
+					<div class="spinner"></div>
+				</td>
+			</tr>
+		{{/if}}
+	</tbody>
+</table>
